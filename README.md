@@ -5,6 +5,7 @@
 
 Building on the good work by Kohsuke for one shot execution of Jenkinsfiles, this shows how build a spring boot app with a Jenkinsfile on Codeship. For a more minimal example see: https://github.com/michaelneale/codeship-jenkinsfile
 
+[ ![Codeship Status for michaelneale/codeship-jenkinsfile-spring](https://app.codeship.com/projects/27e405e0-04e0-0136-23bf-26f9c8a90726/status?branch=master)](https://app.codeship.com/projects/280598)
 
 # How to use
 
