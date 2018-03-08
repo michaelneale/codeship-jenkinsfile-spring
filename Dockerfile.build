@@ -1,0 +1,23 @@
+# This was made using the instructions from https://github.com/kohsuke/jenkinsfile-runner
+# The image contains openjdk8 (so that Jenkins headless can run)
+# as well as Jenkins LTS and all the 'recommended' plugins pre-installed, no other dependencies. 
+FROM michaelneale/codeship-jenkinsfile
+
+
+# install maven
+RUN apt-get update
+RUN apt-get install -y maven
+
+WORKDIR workspace
+
+# Copy the pom.xml into the image to install all dependencies so they can be cached by Codeship
+COPY pom.xml ./
+
+# Run install task so all necessary dependencies are downloaded and cached in
+# the Docker image. We're running through the whole process but disable
+# testing and make sure the command doesn't fail.
+RUN mvn install clean --fail-never -B -DfailIfNoTests=false
+
+
+# This gets the source in place for codeship to do its thing from codeship-steps.yml
+COPY . ./
