@@ -9,7 +9,7 @@ Building on the good work by Kohsuke for one shot execution of Jenkinsfiles, thi
 
 # How to use
 
-Clone this, do what you want. Customise the Dockerfile.build for build time dependencies and/or customise the base Jenkinsfile runner image as per instructions on https://github.com/kohsuke/jenkinsfile-runner/. 
+Clone this, do what you want. Customise the Dockerfile.build for build time dependencies and/or customise the base Jenkinsfile runner image as per instructions on https://github.com/kohsuke/jenkinsfile-runner/. Make sure to copy both codeship yml files, the Jenkinsfile and the Dockerfile.build into your project.
 
 # How it works
 
