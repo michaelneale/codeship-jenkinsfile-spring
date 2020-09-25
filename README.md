@@ -1,6 +1,5 @@
 # Codeship running Jenkinsfiles
 
-<img src='https://www.cloudbees.com/sites/default/files/codeship-by-cloudbees.png'>
 <img src='https://wiki.jenkins.io/download/attachments/2916393/logo.png'>
 
 Building on the good work by Kohsuke for one shot execution of Jenkinsfiles, this shows how build a spring boot app with a Jenkinsfile on Codeship. For a more minimal example see: https://github.com/michaelneale/codeship-jenkinsfile
