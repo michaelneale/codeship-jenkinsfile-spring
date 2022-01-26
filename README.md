@@ -1,5 +1,7 @@
 # Codeship running Jenkinsfiles
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/df1d4e31-4b50-492e-90c4-81f5b931cd2d.svg?orgId=451115019187)](https://app.soluble.cloud/repos/details/github.com/michaelneale/codeship-jenkinsfile-spring?orgId=451115019187)  
+
 <img src='https://wiki.jenkins.io/download/attachments/2916393/logo.png'>
 
 Building on the good work by Kohsuke for one shot execution of Jenkinsfiles, this shows how build a spring boot app with a Jenkinsfile on Codeship. For a more minimal example see: https://github.com/michaelneale/codeship-jenkinsfile
